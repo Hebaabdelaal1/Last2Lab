@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="product?.Img" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product?.Name}}</h5>
+      <p class="card-text">{{product?.Price}}</p>
+    </div>
+    <button [disabled]="currentidindex==0" class="btn btn-primary " (click)="previous()">Previous</button>
+    <br>
+    <button [disabled]="currentidindex==proid.length-1" class="btn btn-success" (click)="next()">next</button>
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="back()">Back</button>

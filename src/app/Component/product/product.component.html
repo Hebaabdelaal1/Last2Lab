@@ -1,0 +1,30 @@
+<!-- <h1>Todaydate is :{{Todaydate|date :'short'}}</h1> -->
+<!-- <h3>Number {{num |fulldate : "YY"}}</h3> -->
+<!-- <h3>Number {{ cart|creditcart}}</h3>  -->
+ 
+        <div class="mb-3 ">
+      <div class="row row-cols-3 row-cols-md-3 g-4" > 
+         @for(pro of FilterProducts; track pro.Id; let i=$index)
+          { 
+            <div class="col"> 
+                <div  class="card"  >
+                  <img [src]="pro.Img" class="card-img-top" alt="...">
+                     <div class="card-body" >
+                               <h5 class="pro-Name">{{i+1}} - Name: {{pro.Name}}</h5>
+                               <h5 class="pro-Price">Price: {{pro.Price |currency:'EGP'}}</h5>
+                                @switch (pro.Quantity)
+                                 {
+                                      @case(1){ <h5 class="pro-Quantity">Quantity: LastItem</h5>}
+                                      @case(2){ <h5 class="pro-Quantity">Quantity: Last Tow Item</h5>}
+                                      @default{  <h5 class="pro-Quantity">Quantity: {{ pro.Quantity }}</h5>     }
+                                 }
+                                 <button class="btn btn-success" (click)="buy(pro)">Buy</button>  <br>
+                                 <br>
+                                 <button class="btn btn-primary"(click)="navigatetodetails(pro.Id)" >Details</button>
+                         </div>
+                        
+                    </div>              
+               </div>
+                  }
+            </div>
+      </div>    

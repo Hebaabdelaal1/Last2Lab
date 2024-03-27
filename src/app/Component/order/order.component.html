@@ -1,0 +1,35 @@
+<select class="form-select form-select-lg"
+[(ngModel)]="Selectcategoryid">
+<option value="0">All</option>
+ <option [value]="category.Id" *ngFor="let category of categories">{{category.Name}}</option>
+</select>
+<div class="pg-success my-5" > 
+    <!-- name should be the name that child receive  -->
+  <app-product [recesivecatid]="Selectcategoryid" (ontotalorderchange)="changetotalprice($event)"></app-product>
+    <!-- <app-product [recesivecatid]="Selectcategoryid" (onproductBought)="addOrderedProduct($event)"> -->
+    <!-- </app-product> -->
+</div>
+
+<h1>Total order price is :{{recieveTotalorderprice}}</h1>
+<div>
+    <h2>Ordered Products</h2>
+   
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let product of orderedProducts">
+        <th scope="row">1</th>
+          <td>{{ product.Name }}</td>
+          <td>{{ product.Price }}</td>
+          <td>{{ product.Quantity }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <input type="text" #username /> -->

@@ -1,0 +1,15 @@
+{ "products": [
+    {"Id":"1","Name" :"Samsung Labtob","Img":"https://i.pinimg.com/474x/0d/9c/16/0d9c1621ead867acb431decd0b86fcd1.jpg","Quantity":"3","Price":"15000","Categoryid":"1" },
+    {"Id":"2","Name" :"Oppo" , "Img":"https://i.pinimg.com/474x/11/4f/58/114f5878766ef3fba8e61d46f279a10c.jpg","Quantity":"0","Price":"1000","Categoryid":"2" },
+    {"Id":"3","Name" :"Apple Labtob" , "Img":"https://i.pinimg.com/474x/c1/76/fa/c176fa9fd7164e0dea131c0bc60ea35a.jpg","Quantity":"5","Price":"15000","Categoryid":"1" },
+    {"Id":"4","Name" :"Infinix Labtob" , "Img":"https://i.pinimg.com/474x/0d/9c/16/0d9c1621ead867acb431decd0b86fcd1.jpg","Quantity":"2","Price":"15000","Categoryid":"1" },
+    {"Id":"5","Name" :"Relame", "Img":"https://i.pinimg.com/474x/0d/9c/16/0d9c1621ead867acb431decd0b86fcd1.jpg","Quantity":"6","Price":"15000","Categoryid":"2"},
+    {"Id":"6","Name" :"Redmi" , "Img":"https://i.pinimg.com/474x/39/74/f8/3974f81db1d014e5e43353a586ce5e54.jpg","Quantity":"10","Price":"15000","Categoryid":"2"}],
+    "categories" : [
+    {"Id":"1",
+    "Name":"Labtob"},
+    {
+    "Id":"2",
+    "Name":"Mobile"}
+    ]
+    }

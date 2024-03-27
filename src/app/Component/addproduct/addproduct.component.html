@@ -1,0 +1,62 @@
+<!-- <h1>{{newproduct | json}}</h1>  -->
+<!-- convert obj to string -->
+<!-- <form>
+  <div class="mb-3" (submit)="Addnewpro()" #prdForm="ngForm" >
+    <label for="exampleInputEmail1" class="form-label" >Name</label>
+    <input type="text" #namepro="ngModel" required  pattern="^[a-zA-Z]{3,15}$" Name="Name" class="form-control" id="exampleInputEmail1"[(ngModel)]="newproduct.Name" aria-describedby="emailHelp">
+    <div class="text-danger" [hidden]="namepro.valid || namepro.untouched">
+      @if(namepro.errors?.['required']){
+          <p>Name is required</p>
+      }
+     @if(namepro.errors?.['pattern'])
+     {
+      <p>name must be at least 3 character</p>
+     }
+  </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Quantity</label>
+    <input type="number" Name="Quantity" class="form-control" id="exampleInputPassword1" [(ngModel)]="newproduct.Quantity" #prdQuant="ngModel">
+    <div class="text-danger" [hidden]="prdQuant.valid  || prdQuant.untouched">
+      @if(prdQuant.errors?.['required']){
+          <p>Quantity is Required</p>
+      }  
+      
+  </div>
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">price</label>
+    <input type="number" Name="Price"  class="form-control" id="exampleInputPassword1" [(ngModel)]="newproduct.Price" #prdPrice="ngModel">
+    <div class="text-danger" [hidden]="prdPrice.valid  || prdPrice.untouched">
+      @if(prdPrice.errors?.['required']){
+          <p>Price is Required</p>
+      }  
+      
+  </div>
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Image</label>
+    <input type="text" Name="Img"  class="form-control" id="exampleInputPassword1" [(ngModel)]="newproduct.Img"  #prdImg="ngModel">
+    <div class="text-danger" [hidden]="prdImg.valid || prdImg.untouched">
+      @if(prdImg.errors?.['required']){
+          <p>Image is Required</p>
+      }  
+      
+  </div>
+
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Category Id</label>
+      <select class="form-select" aria-label="Default select example" Name="Categoryid" [(ngModel)]="newproduct.Categoryid">
+          <option selected>Open this select menu</option>
+        @for(cat of Categoris,track cat.Id){
+          <option [value]="cat.Id">{{cat.Name}}</option>
+
+        }
+        </select>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" [disabled]="prdForm.invalid">Submit</button>
+</form> -->
